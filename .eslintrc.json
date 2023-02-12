@@ -5,16 +5,15 @@
         "es2021": true,
         "node": true
     },
-    "extends": [
-        "standard"
-    ],
-    "parser": "@typescript-eslint/parser",
+    "extends": "standard-with-typescript",
     "parserOptions": {
-        "ecmaVersion": "latest"
+      "project": "./tsconfig.json"
     },
+    "parser": "@typescript-eslint/parser",
     "plugins": [
         "@typescript-eslint"
     ],
     "rules": {
+        "import/export": "off"
     }
 }
